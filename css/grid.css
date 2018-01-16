@@ -11,7 +11,7 @@
     grid-column: 1 / 13;
 }
 
-@media (min-width: 42em) {
+@media (min-width: 680px) {
     
     .grid-container {
         display: grid;
@@ -20,7 +20,7 @@
     }
     
     .credits {
-        grid-column: 4 / 13;
+        grid-column: 4 / 12;
     }
     
     .content {
@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: 75em) {
+@media (min-width: 1200px) {
     
     .credits {
         grid-column: 6 / 10;
