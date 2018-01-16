@@ -194,7 +194,7 @@ section {
 
 /* Tablet Styles */
 
-@media (min-width: 680px) {
+@media only screen and (min-width: 680px) {
    
     /* Global Styles */
 
@@ -287,7 +287,7 @@ section {
 
 /* Desktop Styles */
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     
     .heading {
         left: 42%;
