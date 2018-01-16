@@ -1,0 +1,41 @@
+/* CSS Grid Setup */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 20px;
+    bottom: 0px;
+}
+
+.content {
+    grid-column: 1 / 13;
+}
+
+@media (min-width: 42em) {
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-gap: 20px;
+    }
+    
+    .credits {
+        grid-column: 4 / 13;
+    }
+    
+    .content {
+        grid-column: 4 / 13;
+    }
+}
+
+@media (min-width: 75em) {
+    
+    .credits {
+        grid-column: 6 / 10;
+    }
+    
+    .content {
+        grid-column: 6 / 11;
+    }
+    
+}

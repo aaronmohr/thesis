@@ -1,0 +1,297 @@
+/* Font Setup */
+
+@font-face {
+  font-family: 'ReplicaProLight';
+  src: url('fonts/lineto-replica-light.eot');
+  src: url('fonts/lineto-replica-light.woff') format('woff'),
+       url('fonts/lineto-replica-light.ttf')  format('truetype'),
+       url('fonts/lineto-replica-light.svg') format('svg');
+}
+
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    font-family: "ReplicaProLight", sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+body {
+    padding: 20px;
+}
+
+/* Typography */
+
+p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 50px; 
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+
+h2 a {
+    color: #898989;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 4px 0 0 0;
+
+}
+
+h5 {
+    font-size: 15px;
+    margin: 0 0 5px 0;
+    color: #898989;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, .active a {
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+}
+
+ul li {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+ul li a {
+    color: #898989;
+    padding-bottom: 2px;
+}
+
+/* Header */
+
+.home-icon {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icons/rg-circle-white.svg);
+}
+
+.home-icon:hover {
+    background-image: url(../images/icons/rg-circle-colour.svg);
+}
+
+nav {
+    position: fixed;
+    right: 20px;
+    width: 25%;
+}
+
+/* Content */
+
+.content {
+    margin-top: 100px;
+}
+
+.content a {
+    color: #898989;
+}
+
+.content h3 a {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.content h3 a:hover {
+    border-bottom: 1px solid white;
+}
+
+.content h4 {
+    color: #898989;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.content h5 {
+    margin-top: 10px;
+}
+
+.heading {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+}
+
+.sidebar {
+    display: none;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.links {
+    margin-bottom: 60px;
+}
+
+.image {
+    margin: 50px 0;
+}
+
+.image-research {
+    margin: 100px 0;
+}
+
+.image img, .image-research img {
+    width: 100%;
+}
+
+.player {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 10px 5px 10px;
+}
+
+.title__line {
+    color: white;
+}
+
+/* Credits */
+
+.credits {
+    display: none;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 42em) {
+   
+    /* Global Styles */
+
+    body {
+        margin: 40px;    
+    }
+    
+    /* Typography */
+    
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    ul {
+        display: block;
+    }
+    
+    /* Header */
+    
+    .home-icon {
+        left: 60px;
+        top: 100px;
+    }
+    
+    nav {
+        position: fixed;
+        bottom: 75px;
+        left: 60px;
+    }
+    
+    nav h3 {
+        display: none;
+    }
+    
+    .active {
+        color: white;
+    }
+
+    /* Content */
+    
+    .content {
+        margin-top: 40px;
+    }
+    
+    .content a:hover {
+        color: white;
+    }
+
+    .heading {
+        bottom: 210px;
+        left: 28%;
+        right: 5%
+    }
+        
+    .sidebar {
+        display: block;
+        position: fixed;
+        bottom: 325px;
+    }
+    
+    .image {
+        margin: 50px 0px;
+    }
+    
+    .image-research {
+        margin: 200px 100px;
+    }
+
+    /* Credits */
+    
+    .credits {
+        display: block;
+        color: white;
+        margin-top: 35px
+    }
+    
+    .course {
+        float: left;
+    }
+    
+    .year {
+        float: right
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 75em) {
+    
+    .heading {
+        left: 42%;
+        right: 5%
+    }
+
+}
